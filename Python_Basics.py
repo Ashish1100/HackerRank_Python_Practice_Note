@@ -6,7 +6,7 @@ print("Hello, World!")
 
 
 
-#2 Loop:
+#2 if-else:
 #Given an integer, , perform the following conditional actions:
 
 # If  is odd, print Weird
@@ -38,3 +38,42 @@ print(x-y)
 print(x*y)
 
 
+#4. Division
+a=float(input())
+b=float(input())
+print(a//b)
+print(a/b)
+
+
+#5. Loops:
+
+x=int(input())
+
+for i in range(x):
+    print(i*i)
+
+
+    
+#6. Functions:
+def pn(x):
+    for i in range(x):
+        print(i+1,end="")
+
+x=int(input())
+pn(x)
+
+
+
+#7. Finding Leap Year using python functions:
+def is_leap(year):
+    leap = False
+    if year%400==0:
+        leap=True
+    elif year%100==0:
+       leap=False
+    elif year%4==0:
+        leap=True   
+    
+    return leap
+
+year = int(input())

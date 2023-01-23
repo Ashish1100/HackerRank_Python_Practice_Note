@@ -14,3 +14,14 @@ permu=[[i,j,k] for i in x for j in y for k in z ]
 required=[l for l in permu if sum(l)!=n ]
 
 print(required)
+
+
+
+#2. Given list is[2,3,4,5,6,6] The maximum score is 6 second maximum is 5 Hence, we print 5 as the runner-up score.
+
+if __name__ == '__main__': #main function
+  
+    n = int(input())
+    arr = list(map(int, input().split()))
+    arr.sort()
+    print(arr[(arr.index(max(arr)))-1])

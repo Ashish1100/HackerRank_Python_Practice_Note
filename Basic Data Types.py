@@ -9,9 +9,9 @@ x=[p for p in range(x+1) ]
 y=[q for q in range(y+1) ]
 z=[r for r in range(z+1) ]
 
-permu=[[i,j,k] for i in x for j in y for k in z ]
+permuta=[[i,j,k] for i in x for j in y for k in z ]
 
-required=[l for l in permu if sum(l)!=n ]
+required=[l for l in permuta if sum(l)!=n ]
 
 print(required)
 
